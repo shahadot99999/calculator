@@ -7,8 +7,41 @@
     <!-- daisy link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          plugins: [require('daisyui')],
+        };
+      </script>
+
+      <!-- font asome icon -->
+      <script src="https://kit.fontawesome.com/249647ca07.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <p class="text-2xl bg-slate-500">This is Calculator program.</p>
+    <!-- Navbar is started -->
+    <div class="container mx-auto">
+        <div class="navbar bg-base-100 border-b border-gray-300">
+          <!-- Left Side -->
+          <div class="flex-1">
+            <a class="text-lg font-bold">Calculator</a>
+          </div>
+    
+          <!-- Middle Links -->
+          <div class="flex justify-center flex-none">
+            <ul class="menu menu-horizontal px-1">
+              <li><a class="hover:underline">Home</a></li>
+              <li><a class="hover:underline">Features</a></li>
+              <li><a class="hover:underline">About</a></li>
+            </ul>
+          </div>
+    
+          <!-- Right Side -->
+          <div class="flex-none">
+            <button class="btn btn-ghost btn-circle">
+                <i class="fa-solid fa-calculator"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+     <!-- Navbar is end -->
 </body>
 </html>
