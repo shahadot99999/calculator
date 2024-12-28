@@ -48,7 +48,9 @@
 
      <!-- Normal Calculator part started -->
       <section>
+        <h4 class="text-center text-2xl font-bold mt-1">Normal Calculator</h4>
         <div class=" container flex justify-center items-center h-full  ">
+         
           <div class="bg-red-100 shadow-lg rounded-lg p-6 w-80 h-80 mt-1 " >
             <!-- Display -->
             <div id="display" class="mb-4 bg-gray-100 rounded text-right text-2xl font-mono p-4 h-16 flex items-center justify-end">
@@ -85,9 +87,49 @@
       <!-- Normal Calculator part End -->
 
       <!-- Age calculator start -->
+     <section>
+      <div class="container mt-2 flex justify-center items-center h-full">
 
+        <div class="bg-lime-100 p-6 rounded-lg shadow-md w-96 ">
+          <h1 class="text-2xl font-bold text-gray-700 text-center mb-4">Age Calculator</h1>
+      
+          <form id="ageCalculatorForm" class="space-y-4">
+            <!-- Birth Date -->
+            <div>
+              <label for="birthDate" class="block text-gray-600 font-medium">Birth Date:</label>
+              <input 
+                type="date" 
+                id="birthDate" 
+                class="w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+            </div>
+      
+            <!-- Present Date -->
+            <div>
+              <label for="presentDate" class="block text-gray-600 font-medium">Present Date:</label>
+              <input 
+                type="date" 
+                id="presentDate" 
+                class="w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+            </div>
+      
+            <!-- Calculate Button -->
+            <button 
+              type="button" 
+              onclick="calculateAge()"
+              class="w-full bg-blue-500 text-white font-medium py-2 px-4 rounded-md hover:bg-blue-600 focus:ring-2 focus:ring-blue-300">
+              Calculate Age
+            </button>
+          </form>
+      
+          <!-- Result -->
+          <div id="result" class="mt-4 text-gray-700 font-medium"></div>
+      
+
+      </div>
+     </section>
       <!-- Age calculator end -->
 
       <script src="js/normalCalculator.js"></script>
+      <script src="js/ageCalculator.js"></script>
 </body>
 </html>
