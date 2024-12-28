@@ -5,30 +5,24 @@ A responsive and interactive calculator application built with HTML, CSS, and Ja
 Features
 
 Header:
-
  A visually appealing header for navigation or branding.
 
 Normal Calculator:
-
  Perform basic arithmetic operations seamlessly.
 
 Age Calculator:
-
  Calculate your age in years, months, and days by inputting the birth date and current date.
 
 
 Technical Highlights
 
 HTML: 
-
 Structured and semantic layout for components.
 
 CSS:
-
  Styled with TailwindCSS and enhanced with DaisyUI for modern UI elements.
 
 JavaScript:
-
  Includes dynamic functionalities:
 
 getElementById and querySelectorAll for DOM manipulation.
@@ -37,5 +31,5 @@ Variables to store and process data.
 
 Links
 
-Live Demo: 
+Live Demo: https://calculator-verity.netlify.app/ 
 Code Repository: https://github.com/shahadot99999/calculator
